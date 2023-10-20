@@ -1,0 +1,157 @@
+@use '../../styles/partials/mixins' as *;
+
+.comment-section{
+    padding-left: 1rem;
+
+&__header{
+padding-left: 4rem;
+margin-bottom: 0px;
+color: #AFAFAF;
+font-size: 20px;
+@include tablet {
+  padding-left: 5rem;
+            }
+                @include desktop { 
+                
+            }
+
+}
+
+&__my-form{
+    @include tablet {
+        display: flex;
+                }
+                    @include desktop { 
+                    
+                }
+
+}
+&__your-img{
+position: absolute;
+left: 1%;
+width: 7vh;
+
+border-radius: 50%;
+@include tablet {
+    left:2%
+              }
+                  @include desktop { 
+                  
+              }
+
+}
+
+&__user-comment{
+    padding-left: 4rem;
+    width: 60%;
+
+@include tablet {
+padding-left: 5rem;
+            }
+                @include desktop { 
+                
+            }
+
+}
+
+&__your-comment{
+ width: 103%;
+ height: 6rem;
+ @include tablet {
+    height: 2rem;
+    width: 100%;
+            }
+                @include desktop { 
+                
+            }
+}
+
+
+
+&__button{
+padding-left: 4rem;
+padding-top: 1rem;
+@include tablet {
+    padding-left: 1rem;
+    padding-top: 0rem;
+    width: 20%;
+            }
+                @include desktop { 
+                
+            }
+}
+
+
+&__button--clickable{
+background-color: blue;
+color: white;
+width: 90%;
+height: 3.2rem;
+border-radius: 3%;
+@include tablet {
+    height: 2.5rem;
+            }
+                @include desktop { 
+                
+            }
+}
+
+
+}
+
+
+.comments-container{
+
+}
+
+.comments__single-comment{
+    border-top: 1px solid black;
+    margin-top: 1rem;
+    padding-top: 1.3rem;
+
+    @include tablet {
+    padding-left: 1rem;
+                }
+                    @include desktop { 
+                    
+                }
+
+
+&--img{
+    position: absolute;
+    
+    width: 7vh;
+    border-radius: 50%;
+
+    @include tablet {
+        left: 2%;
+                    }
+                        @include desktop { 
+                        
+                    }
+    
+
+}
+&--name-date-container{
+display: inline-flex;
+}
+
+&--name{
+padding-left: 4rem;
+margin-top: 8px;
+font-weight: 600;
+}
+
+&--date{
+position: absolute;
+left: 90%;
+margin-top: 8px;
+color: #AFAFAF;
+
+}
+&--text{
+padding-left: 4rem;
+padding-right: 1rem;
+margin-top: 0px;
+}
+}
