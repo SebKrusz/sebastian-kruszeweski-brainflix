@@ -7,7 +7,7 @@
     font-family: 'Avenir';
     
     @include tablet {
-        padding-left: 1rem;
+        padding-left: 5rem;
          
            }
                @include desktop { 
@@ -86,7 +86,7 @@
 
     @include tablet {
     display: inline-flex;
-        
+    left: 72%;
           }
               @include desktop { 
               

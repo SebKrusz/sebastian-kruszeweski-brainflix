@@ -59,4 +59,4 @@ export default Videodescription;
 
 // git checkout develop
 // git merge create-video-description
-// git push (to sync local files with github repo)
+// git (to sync local files with github repo)

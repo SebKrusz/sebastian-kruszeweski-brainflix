@@ -26,6 +26,7 @@ function Commentsection({ videoData }) {
 
   return (
     <div className="comment-section">
+      <p className="comment-section__quantity">{comments.length} comments</p> {/* Display comment count here */}
       <h2 className="comment-section__header">Join The Conversation</h2>
       <form className="comment-section__my-form" onSubmit={handleSubmitComment}>
         <img className="comment-section__your-img" src={yourimg} alt="User Image" />

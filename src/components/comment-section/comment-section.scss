@@ -10,60 +10,59 @@ color: #AFAFAF;
 font-size: 20px;
 @include tablet {
   padding-left: 5rem;
-            }
-                @include desktop { 
+}
+    @include desktop { 
                 
-            }
+}
 
 }
 
 &__my-form{
     @include tablet {
         display: flex;
-                }
-                    @include desktop { 
-                    
-                }
+}
+    @include desktop {  
+}
 
 }
 &__your-img{
 position: absolute;
-left: 1%;
-width: 7vh;
+left: 3%;
+width: 5vh;
 
 border-radius: 50%;
-@include tablet {
+    @include tablet {
     left:2%
-              }
-                  @include desktop { 
+}
+    @include desktop { 
                   
-              }
+}
 
 }
 
 &__user-comment{
-    padding-left: 4rem;
+    padding-left: 4.2rem;
     width: 60%;
 
 @include tablet {
-padding-left: 5rem;
-            }
-                @include desktop { 
+    padding-left: 5rem;
+}
+    @include desktop { 
                 
-            }
+}
 
 }
 
 &__your-comment{
- width: 103%;
+ width: 131%;
  height: 6rem;
  @include tablet {
-    height: 2rem;
+    height: 3rem;
     width: 100%;
-            }
-                @include desktop { 
+ }
+    @include desktop { 
                 
-            }
+}
 }
 
 
@@ -75,25 +74,33 @@ padding-top: 1rem;
     padding-left: 1rem;
     padding-top: 0rem;
     width: 20%;
-            }
-                @include desktop { 
+}
+    @include desktop { 
                 
-            }
+}
 }
 
 
 &__button--clickable{
-background-color: blue;
+background-color: #0095FF;
 color: white;
 width: 90%;
 height: 3.2rem;
-border-radius: 3%;
-@include tablet {
-    height: 2.5rem;
-            }
-                @include desktop { 
+border-radius: .5rem;
+background-image: url('../../assets/images/Icons/add_comment.svg');
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-size: 5%;
+  background-position: 1% 50%;
+  text-indent: 20px;
+  padding: 5px 3px;
+    @include tablet {
+     background-position: 10% 50%;
+    background-size: 12%;
+}
+    @include desktop { 
                 
-            }
+}
 }
 
 
@@ -111,24 +118,24 @@ border-radius: 3%;
 
     @include tablet {
     padding-left: 1rem;
-                }
-                    @include desktop { 
+}
+    @include desktop { 
                     
-                }
+}
 
 
 &--img{
     position: absolute;
     
-    width: 7vh;
+    width: 5vh;
     border-radius: 50%;
 
     @include tablet {
-        left: 2%;
-                    }
-                        @include desktop { 
+    left: 2%;
+}
+    @include desktop { 
                         
-                    }
+}
     
 
 }
@@ -144,7 +151,7 @@ font-weight: 600;
 
 &--date{
 position: absolute;
-left: 90%;
+left: 80%;
 margin-top: 8px;
 color: #AFAFAF;
 

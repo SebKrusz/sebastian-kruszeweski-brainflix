@@ -1,0 +1,50 @@
+@use '../../styles/partials/mixins' as *;
+
+.aside{
+    font-family: 'Avenir';
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 1rem;
+    border-top: 1px solid black;
+    &__title{
+        font-size: 16px;
+        color: #AFAFAF;
+        @include tablet {
+    margin-top: 32px;
+    margin-bottom: 32px;
+             
+               }
+                   @include desktop { 
+                   
+               }
+
+    }
+
+    &__video{
+        display: inline-flex;
+        padding-bottom: 2rem;
+
+    }
+    &__video-image{
+       max-width: 15vh;
+        max-height: 10%;
+        border-radius: 5%;
+    }
+    &__video-text{
+        display: grid;
+    }
+
+    &__video-title{
+    padding-left: 1rem;
+    
+
+    }
+    &__video-channel{
+        padding-left: 1rem;
+
+    }
+
+
+
+}
