@@ -1,0 +1,120 @@
+@use '../../styles/partials/mixins' as *;
+
+
+.Header {
+  display: inline-flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: blue;
+  background-color: rgb(255, 251, 1);
+  width: 100%;
+  align-items: center;
+@include tablet {
+  background-color: rgb(68, 247, 193);
+  flex-direction: row;
+}
+@include desktop { 
+  background-color: rgb(165, 0, 27);
+
+}
+}
+
+.navbar__userimg{
+  width: 7vh;
+  border-radius: 50%;
+  @include tablet {
+    position: absolute;
+    width: 9vh;
+    right:4%;
+    top: 2%
+  }
+  @include desktop { 
+
+  
+  }
+}
+
+.navbar__search--logo{
+  width: 20vh;
+  padding-top: 16px;
+
+  @include tablet {
+    padding-left: 2rem;
+    padding-right: 6rem;
+    padding-top: 0px;
+
+  }
+      @include desktop { 
+      
+  }
+}
+
+.navbar__useroptions{
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  @include tablet {
+    flex-wrap: nowrap;
+  }
+  @include desktop { 
+
+  
+  }
+}
+
+.navbar__upload-button__container{
+width: 70%;
+padding-bottom: 16px;
+padding-top: 1rem;
+}
+.navbar__upload-button{
+width: 100%;
+display: inline-flex;
+justify-content: center;
+height: 3rem;
+align-items: center;
+background-color:blue ;
+color: white;
+@include tablet {
+width: 50%;
+}
+@include desktop { 
+
+
+}
+
+}
+.navbar__upload-button__image{
+  left: 15%;
+  position: absolute;
+  padding-left: 1rem;
+  @include tablet {
+    left: 65%;
+  }
+  @include desktop { 
+
+}
+}
+.navbar__searchbar{
+  width: 90%;
+  height: 2rem;
+  @include tablet {
+    height: 2.5rem;
+
+  }
+      @include desktop { 
+      
+  }
+}
+.navbar__searchbar__container{
+  width: 60%;
+  padding-top: 1rem;
+  @include tablet {
+    width: 70%;
+
+  }
+      @include desktop { 
+      
+  }
+}
