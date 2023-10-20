@@ -1,0 +1,10 @@
+@media screen and (min-width: 1280px) {
+  .contentsplit {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contentsplit__main {
+    width: 65%;
+  }
+}/*# sourceMappingURL=main.css.map */

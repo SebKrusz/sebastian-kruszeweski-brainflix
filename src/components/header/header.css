@@ -3,52 +3,121 @@
   flex-direction: column;
   font-size: calc(10px + 2vmin);
   color: blue;
-  background-color: green;
   width: 100%;
   align-items: center;
 }
 @media screen and (min-width: 768px) {
   .Header {
-    background-color: pink;
+    flex-direction: row;
   }
 }
 .navbar__userimg {
-  width: 5vh;
+  width: 7.5vh;
   border-radius: 50%;
 }
-
+@media screen and (min-width: 768px) {
+  .navbar__userimg {
+    position: absolute;
+    width: 6.5vh;
+    right: 1%;
+    top: 1%;
+  }
+}
 .navbar__search--logo {
-  width: 10vh;
+  width: 20vh;
   padding-top: 16px;
+}
+@media screen and (min-width: 768px) {
+  .navbar__search--logo {
+    padding-left: 2rem;
+    padding-right: 16rem;
+    padding-top: 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .navbar__search--logo {
+    padding-left: 27rem;
+    padding-right: 25%;
+    height: 3.4rem;
+  }
 }
 
 .navbar__useroptions {
   display: inline-flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
   justify-content: center;
 }
-
+@media screen and (min-width: 768px) {
+  .navbar__useroptions {
+    flex-wrap: nowrap;
+  }
+}
 .navbar__upload-button__container {
   width: 70%;
   padding-bottom: 16px;
+  padding-top: 1rem;
 }
 
 .navbar__upload-button {
   width: 100%;
   display: inline-flex;
   justify-content: center;
+  height: 3rem;
+  align-items: center;
+  background-color: #0095FF;
+  border-radius: 0.5rem;
+  color: white;
 }
-
+@media screen and (min-width: 768px) {
+  .navbar__upload-button {
+    width: 50%;
+    background-image: url("../../assets/images/Icons/upload.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 4% 50%;
+  }
+}
 .navbar__upload-button__image {
-  left: 22%;
+  left: 15%;
   position: absolute;
+  padding-left: 1rem;
 }
-
+@media screen and (min-width: 768px) {
+  .navbar__upload-button__image {
+    display: none;
+  }
+}
 .navbar__searchbar {
   width: 90%;
+  height: 2rem;
+  background-image: url("../../assets/images/Icons/search.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 5%;
+  background-position: 1% 50%;
+  text-indent: 20px;
+  padding: 5px 3px;
+  border-radius: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .navbar__searchbar {
+    height: 2.5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .navbar__searchbar {
+    text-indent: 40px;
+  }
 }
 
 .navbar__searchbar__container {
   width: 60%;
+  padding-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .navbar__searchbar__container {
+    width: 70%;
+  }
 }/*# sourceMappingURL=header.css.map */

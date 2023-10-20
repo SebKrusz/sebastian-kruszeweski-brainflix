@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './comment-section.scss';
 import yourimg from '../../assets/images/images/Mohan-muruge.jpg';
 
 function Commentsection({ videoData }) {
   const [comments, setComments] = useState(videoData.comments || []);
   const [newComment, setNewComment] = useState('');
+
+  // Use useEffect to update comments when videoData changes
+  useEffect(() => {
+    setComments(videoData.comments || []);
+  }, [videoData]);
 
   const handleCommentChange = (e) => {
     setNewComment(e.target.value);
@@ -24,9 +29,10 @@ function Commentsection({ videoData }) {
     setNewComment('');
   };
 
+
   return (
     <div className="comment-section">
-      <p className="comment-section__quantity">{comments.length} comments</p> {/* Display comment count here */}
+      <p className="comment-section__quantity">{comments.length} comments</p>
       <h2 className="comment-section__header">Join The Conversation</h2>
       <form className="comment-section__my-form" onSubmit={handleSubmitComment}>
         <img className="comment-section__your-img" src={yourimg} alt="User Image" />

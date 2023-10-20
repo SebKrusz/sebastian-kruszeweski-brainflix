@@ -2,15 +2,14 @@
 
 
 .video-description{
-    // blah blah 
-    // blah blah
+
     font-family: 'Avenir';
-    
     @include tablet {
         padding-left: 5rem;
          
            }
                @include desktop { 
+                padding-left: 20rem;
                
            }
     
@@ -86,7 +85,7 @@
 
     @include tablet {
     display: inline-flex;
-    left: 72%;
+    left: 40%;
           }
               @include desktop { 
               

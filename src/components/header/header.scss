@@ -17,11 +17,11 @@
 }
 
 .navbar__userimg{
-  width: 7vh;
+  width: 7.5vh;
   border-radius: 50%;
   @include tablet {
     position: absolute;
-    width: 7.5vh;
+    width: 6.5vh;
     right:1%;
     top: 1%
   }
@@ -43,7 +43,9 @@
 
   }
       @include desktop { 
-      
+        padding-left: 27rem;
+        padding-right: 25%;
+        height: 3.4rem;
   }
 }
 
@@ -119,7 +121,7 @@ background-position: 4% 50%;
 
   }
       @include desktop { 
-      
+        text-indent: 40px;
   }
 }
 
