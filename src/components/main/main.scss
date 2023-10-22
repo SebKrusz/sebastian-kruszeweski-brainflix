@@ -8,19 +8,15 @@
 @include desktop { 
 display: flex;
 }
-    
-
     &__main{
         @include desktop { 
         width: 65%;
-            }
-
+        }
     }
 
     &__aside{
         @include desktop { 
-       
-            }
+        }
     }
 
 

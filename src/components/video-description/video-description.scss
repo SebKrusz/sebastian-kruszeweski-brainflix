@@ -5,54 +5,42 @@
 
     font-family: 'Avenir';
     @include tablet {
-        padding-left: 5rem;
-         
-           }
-               @include desktop { 
-                padding-left: 20rem;
-               
-           }
+    padding-left: 5rem;
+        }
+    @include desktop { 
+    padding-left: 20rem;    
+        }
     
     &__title{
-        padding-left: 1rem;
-        border-bottom: 1px solid #f1f1f1;
-        padding-bottom: 2rem;
-        margin-bottom: 16px;
-        color: #323232;
-        @include tablet {
-            border-bottom: 0px solid #f1f1f1;
-            margin-bottom: 0px;
-            padding-bottom: .5rem;      
+    padding-left: 1rem;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 2rem;
+    margin-bottom: 16px;
+    color: #323232;
+    @include tablet {
+    border-bottom: 0px solid #f1f1f1;
+    margin-bottom: 0px;
+    padding-bottom: .5rem;      
 }
-        @include desktop {               
+    @include desktop {               
 }
-
-
     }
+
     &__info{
     display: flex;
     border-bottom: 1px solid #f1f1f1;
     padding-bottom: 64px;
     margin-bottom: 16px;
-
-
     @include tablet {
-        padding-bottom: 8px;  
-
+    padding-bottom: 8px;  
 }
-    @include desktop { 
-               
 }
-    }
 
     &__author-date{
-
         @include tablet {
-            display: inline-flex;
-        
+        display: inline-flex;
           }
-              @include desktop { 
-              
+        @include desktop { 
           }
     }
 
@@ -60,8 +48,6 @@
         padding-left: 1rem;
         font-weight: 700;
         color: #323232;
-       
-
     }
     &__author-date--date{
         padding-left: 1rem;
@@ -69,12 +55,7 @@
         position: absolute;
         @include tablet {
         position: relative;
-        
           }
-              @include desktop { 
-              
-          }
-
     }
 
     &__numbers{
@@ -86,55 +67,38 @@
     @include tablet {
     display: inline-flex;
     left: 40%;
-          }
-              @include desktop { 
-              
-          }
+        }
     }
 
     &__numbers__views{
         display: inline-flex;
-        
-        
-
     }
 
     &__numbers__views-image{
     width: 25%;
     @include tablet {
-       padding-left: 1rem;
-        
-          }
-              @include desktop {   
-
-          }
+    padding-left: 1rem;
     }
-
+}
     &__numbers__views-text{
-        padding-left: 1rem;
-    }
-
+    padding-left: 1rem;
+}
     &__numbers__likes{
         display: inline-flex;
-    }
-
+}
     &__numbers__likes-image{
     width: 30%;
     @include tablet {
-        padding-left: 1rem;
-         
-           }
-               @include desktop { 
-               
-           }
+    padding-left: 1rem; 
     }
-    &__numbers__likes-text{
+}
+     &__numbers__likes-text{
         padding-left: 1rem;
-    }
+}
 
     &__description{
 
-    }
+}
     &__description--text{
         padding-left: 1rem;
         padding-right: 1rem;
@@ -143,5 +107,4 @@
         font-size: 18px; 
         line-height: 26px;
     }
-
 }

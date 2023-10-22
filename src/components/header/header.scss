@@ -36,18 +36,17 @@
   width: 20vh;
   padding-top: 16px;
 
-  @include tablet {
+    @include tablet {
     padding-left: 2rem;
     padding-right: 16rem;
     padding-top: 0px;
     height: 2.4rem;
-
-  }
-      @include desktop { 
-        padding-left: 27rem;
-        padding-right: 25%;
-        height: 3.4rem;
-  }
+    }
+    @include desktop { 
+    padding-left: 27rem;
+    padding-right: 25%;
+    height: 3.4rem;
+    }
 }
 
 .navbar__useroptions{
@@ -86,8 +85,6 @@ background-size:contain;
 background-repeat: no-repeat;
 background-size: 15%;
 background-position: 4% 50%;
-
-
 }
 @include desktop { 
 
@@ -101,11 +98,8 @@ background-position: 4% 50%;
   padding-left: 1rem;
   @include tablet {
   display: none;
-
 }
   @include desktop { 
-
-
 }
 }
 .navbar__searchbar{
@@ -119,10 +113,8 @@ background-position: 4% 50%;
   text-indent: 20px;
   padding: 5px 3px;
   border-radius: .5rem;
-
   @include tablet {
     height: 2.5rem;
-
   }
       @include desktop { 
         text-indent: 40px;
@@ -135,9 +127,7 @@ background-position: 4% 50%;
   padding-top: 1rem;
   @include tablet {
     width: 70%;
-
   }
-      @include desktop { 
-      
+      @include desktop {   
   }
 }
