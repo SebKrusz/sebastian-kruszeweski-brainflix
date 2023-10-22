@@ -1,14 +1,12 @@
-@font-face {
-  font-family: "Avenir";
-  src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf);
-}
-@font-face {
-  font-family: "Avenir";
-  src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf);
-  font-weight: 700;
-}
+@use '../src/styles/partials/variables' as *;
+@use '../src/styles/partials/mixins' as *;
+@use '../src/styles/partials/fonts' as *;
+
+
+
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -21,6 +19,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+
+
 .App-link {
   color: #61dafb;
 }
@@ -32,4 +33,4 @@
   to {
     transform: rotate(360deg);
   }
-}/*# sourceMappingURL=App.css.map */
+}
