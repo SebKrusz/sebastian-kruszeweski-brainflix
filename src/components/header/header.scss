@@ -40,6 +40,7 @@
     padding-left: 2rem;
     padding-right: 16rem;
     padding-top: 0px;
+    height: 2.4rem;
 
   }
       @include desktop { 
@@ -77,13 +78,15 @@ align-items: center;
 background-color:#0095FF ;
 border-radius: .5rem;
 color: white;
+font-weight: 600;
 @include tablet {
 width: 50%;
 background-image: url('../../assets/images/Icons/upload.svg');
 background-size:contain;
 background-repeat: no-repeat;
-background-size: 10%;
+background-size: 15%;
 background-position: 4% 50%;
+
 
 }
 @include desktop { 
@@ -101,6 +104,7 @@ background-position: 4% 50%;
 
 }
   @include desktop { 
+
 
 }
 }

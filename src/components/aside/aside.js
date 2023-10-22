@@ -2,13 +2,11 @@ import React from 'react';
 import './aside.scss';
 import videoData from '../../data/video-details.json';
 
-
 function Aside({ handleVideoSelect, selectedVideo }) {
   const handleVideoClick = (video) => {
     handleVideoSelect(video);
   };
 
-  // Filter videoData to exclude the selected video
   const nextVideos = videoData.filter((video) => video.id !== selectedVideo.id);
 
   return (

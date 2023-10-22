@@ -42,12 +42,12 @@ width: 5vh;
 
 border-radius: 50%;
     @include tablet {
-    left:1%;
+    left:0%;
     width: 8vh;
 }
     @include desktop { 
-        left:1%;
-        width: 8vh;
+        left:12%;
+        width: 6.5vh;
                   
 }
 
@@ -146,11 +146,12 @@ background-image: url('../../assets/images/Icons/add_comment.svg');
     border-radius: 50%;
 
     @include tablet {
-    left: 1%;
+    left: 0%;
     width: 8vh;
 }
     @include desktop { 
-        width: 8vh;
+        width: 6.5vh;
+        left:12%;
 }
     
 
@@ -163,6 +164,7 @@ display: inline-flex;
 padding-left: 4rem;
 margin-top: 8px;
 font-weight: 600;
+color: #323232;
 }
 
 &--date{
@@ -175,7 +177,7 @@ color: #AFAFAF;
 
 }
     @include desktop { 
-        left: 55%;            
+        left: 50%;            
 }
 
 
@@ -184,5 +186,6 @@ color: #AFAFAF;
 padding-left: 4rem;
 padding-right: 1rem;
 margin-top: 0px;
+color: #323232;
 }
 }

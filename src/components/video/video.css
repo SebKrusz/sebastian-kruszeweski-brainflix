@@ -1,9 +1,0 @@
-.current-video {
-  width: 100%;
-  height: 29vh;
-}
-@media screen and (min-width: 1280px) {
-  .current-video {
-    height: 66vh;
-  }
-}/*# sourceMappingURL=video.css.map */

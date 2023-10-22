@@ -19,8 +19,8 @@
         font-size: 16px;
         color: #AFAFAF;
         @include tablet {
-    margin-top: 32px;
-    margin-bottom: 32px;
+        margin-top: 32px;
+        margin-bottom: 32px;
              
 }
 @include desktop { 
@@ -34,6 +34,8 @@
 
     }
     &__video-image{
+        height: 100px;
+        width: 130px;
        max-width: 15vh;
         max-height: 10%;
         border-radius: 5%;
@@ -44,6 +46,8 @@
 
     &__video-title{
     padding-left: 1rem;
+    font-weight: 600;
+    font-size: 15px;
     
 
     }

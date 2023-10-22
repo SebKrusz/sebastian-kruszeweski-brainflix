@@ -1,15 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './comment-section.scss';
 import yourimg from '../../assets/images/images/Mohan-muruge.jpg';
 
 function Commentsection({ videoData }) {
-  const [comments, setComments] = useState(videoData.comments || []);
   const [newComment, setNewComment] = useState('');
-
-  // Use useEffect to update comments when videoData changes
-  useEffect(() => {
-    setComments(videoData.comments || []);
-  }, [videoData]);
 
   const handleCommentChange = (e) => {
     setNewComment(e.target.value);
@@ -19,20 +13,27 @@ function Commentsection({ videoData }) {
     e.preventDefault();
 
     const newCommentObj = {
-      id: comments.length + 1,
+      id: videoData.comments.length + 1,
       name: 'Your Name',
       text: newComment,
-      timestamp: new Date().toLocaleString(),
+      timestamp: new Date().getTime(),
     };
 
-    setComments([...comments, newCommentObj]);
+    videoData.comments.push(newCommentObj);
     setNewComment('');
   };
 
+  const formatUnixTimestamp = (timestamp) => {
+    const date = new Date(timestamp);
+    const year = date.getFullYear();
+    const month = (date.getMonth() + 1).toString().padStart(2, '0');
+    const day = date.getDate().toString().padStart(2, '0');
+    return `${month}/${day}/${year}`;
+  };
 
   return (
     <div className="comment-section">
-      <p className="comment-section__quantity">{comments.length} comments</p>
+      <p className="comment-section__quantity">{videoData.comments.length} comments</p>
       <h2 className="comment-section__header">Join The Conversation</h2>
       <form className="comment-section__my-form" onSubmit={handleSubmitComment}>
         <img className="comment-section__your-img" src={yourimg} alt="User Image" />
@@ -54,12 +55,12 @@ function Commentsection({ videoData }) {
         </div>
       </form>
       <div className="comments-container">
-        {comments.map((comment) => (
+        {videoData.comments.map((comment) => (
           <div key={comment.id} className="comments__single-comment">
             <img className="comments__single-comment--img" src={yourimg} alt="User Image" />
             <div className="comments__single-comment--name-date-container">
               <p className="comments__single-comment--name">{comment.name}</p>
-              <p className="comments__single-comment--date">{comment.timestamp}</p>
+              <p className="comments__single-comment--date">{formatUnixTimestamp(comment.timestamp)}</p>
             </div>
             <p className="comments__single-comment--text">{comment.text || comment.comment}</p>
           </div>
