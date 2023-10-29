@@ -1,0 +1,254 @@
+@use '../../styles/partials/mixins' as *;
+
+.Header{
+    border-bottom: 1px solid #323232 ;
+}
+
+.upload__container{
+display: inline-flex;
+flex-direction: column;
+padding-left: 16px;
+@include tablet {
+ padding-left: 3rem;
+  }
+@include desktop { 
+    padding-left: 7rem;
+
+}
+}
+
+.upload{
+
+    &__container{
+    width: 97.8%;
+    @include tablet {
+        width: 94%;
+ 
+    
+      }
+    @include desktop { 
+        width: 80%;
+}
+    }
+
+    &__main{
+
+        @include tablet {
+            display: inline-flex;
+            flex-wrap: wrap;
+
+          }
+        @include desktop { 
+            display: inline-flex;
+            
+        
+    }
+    }
+    &__header{
+        color: #323232;
+        @include tablet { 
+        border-bottom: 1px solid #323232 ;        
+        
+    }
+    @include desktop { 
+        padding-bottom: 16px ;        
+        
+    }
+        
+    }
+
+    &__thumbnail-container{
+
+    @include tablet {
+        width: 45%;
+        margin-bottom: 16px;
+    }
+  @include desktop { 
+
+}
+    }
+
+    &__thumbnail-text{
+        color: #bdbbbb;
+        margin-bottom: 8px;
+        @include desktop { 
+        margin-top: 36px;
+
+    }
+
+
+    }
+    &__thumbnail-img{
+        width: 95%;
+        height: 100%;
+        border-radius: .5rem;
+        @include tablet {
+            width: 100%;
+            height: 100%;
+        
+        }
+      @include desktop { 
+        height: 65%;
+
+  }
+    }
+
+
+    &__forms-container{
+
+        @include tablet {
+            margin-top: 16px;
+            width: 100%;
+
+        
+        }
+      @include desktop { 
+        width: 50%;
+        padding-left: 16px;
+  }
+
+
+    }
+    &__title-form-container{
+        display: inline-flex;
+        flex-direction: column;
+        width: 95%;
+        padding-bottom: 16px;
+        @include tablet {
+        margin-top: 24px;
+        
+        }
+      @include desktop { 
+   
+  }
+   
+   
+    }
+
+    &__title-form-label{
+        color: #bdbbbb;
+        margin-bottom: 8px;
+
+    }
+
+    &__title-form-input{
+    height:2rem;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: .5rem;
+    border-color: #bdbbbb;
+    
+    }
+
+    &__description-form-container{
+    display: inline-flex;
+    flex-direction: column;
+    width: 95%;
+    @include desktop { 
+        margin-bottom: 24px;
+
+}
+
+    }
+
+
+    &__description-form-label{
+        color: #bdbbbb;
+        margin-bottom: 8px;
+
+    }
+
+
+    &__description-form-input{
+        height: 6rem;
+        background-color: #f1f1f1;
+        border-radius: .5rem;
+        border-color: #bdbbbb;
+        
+    }
+
+    &__button-container{
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 6rem;
+        @include tablet {
+
+            display: inline-flex;
+            flex-direction: row-reverse;
+            justify-content: end;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: #323232 1px solid;
+
+          }
+        @include desktop { 
+            display: inline-flex;
+            flex-direction: row-reverse;
+            justify-content: end;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: #323232 1px solid;
+
+    }
+        
+
+    }
+
+    &__publish-button{
+        width: 70%;
+        padding-bottom: 16px;
+        padding-top: 1rem;
+        display: inline-flex;
+        justify-content: center;
+        height: 1.5rem;
+        align-items: center;
+        background-color:#0095FF ;
+        border-radius: .5rem;
+        color: white;
+        font-weight: 600;
+        background-image: url('../../assets/images/Icons/publish.svg');
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-size: 13%;
+        background-position: 5% 50%;
+        text-decoration: none;
+
+        @include tablet {
+            width: 20%;
+          }
+        @include desktop { 
+            width: 20%;
+    }
+    }
+
+
+
+    &__cancel-button{
+        width: 70%;
+        margin-top: 32px;
+        padding-bottom: 16px;
+        padding-top: 1rem;
+        display: inline-flex;
+        justify-content: center;
+        height: 3rem;
+        align-items: center;
+        border: 0rem;
+        color: #0095FF;
+        font-weight: 600;
+        background-color: white;
+        text-decoration: none;
+
+        @include tablet {
+            width: 20%;
+            margin-top: 0px;
+           
+            padding-top: 0px;
+          }
+        @include desktop { 
+
+    }
+    }
+
+
+}

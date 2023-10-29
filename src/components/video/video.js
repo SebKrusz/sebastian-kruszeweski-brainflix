@@ -1,14 +1,13 @@
+import React from 'react';
 import './video.scss';
 
 function Video({ posterImage }) {
   return (
-    <>
-      <div>
-        <video className="current-video" controls poster={posterImage}>
-          <source src="./" type="video/ogg"></source>
-        </video>
-      </div>
-    </>
+    <div>
+      <video className="current-video" controls poster={posterImage}>
+        <source src="./" type="video/ogg"></source>
+      </video>
+    </div>
   );
 }
 

@@ -1,0 +1,41 @@
+@use '../../styles/partials/mixins' as *;
+.below-video{
+    @include desktop { 
+        display: inline-flex;
+        width: 100%;
+            }
+
+
+}
+.contentsplit{
+
+
+
+@include desktop { 
+display: flex;
+}
+    
+
+    &__main{
+        @include desktop { 
+        width: 100%;
+            }
+
+    }
+
+    &_aside{
+        border-left: #AFAFAF 1px solid;
+        
+        @include desktop { 
+       
+            }
+        }
+    
+    }
+
+    .description-comments{
+        @include desktop { 
+            width:60%;
+        }
+       
+    }
