@@ -11,9 +11,6 @@
 @include tablet {
   flex-direction: row;
 }
-@include desktop { 
-
-}
 }
 
 .navbar__userimg{
@@ -24,11 +21,6 @@
     width: 6.5vh;
     right:1%;
     top: 1%
-  }
-  @include desktop { 
-
-
-  
   }
 }
 
@@ -58,10 +50,6 @@
   @include tablet {
     flex-wrap: nowrap;
   }
-  @include desktop { 
-
-  
-  }
 }
 
 .navbar__upload-button__container{
@@ -89,55 +77,43 @@ background-position: 4% 50%;
 
 
 }
-@include desktop { 
-
-
-}
-
 }
 .navbar__upload-button__image{
-  left: 15%;
-  position: absolute;
-  padding-left: 1rem;
-  @include tablet {
-  display: none;
-
-}
-  @include desktop { 
-
+left: 15%;
+position: absolute;
+padding-left: 1rem;
+@include tablet {
+display: none;
 
 }
 }
 .navbar__searchbar{
-  width: 90%;
-  height: 2rem;
-  background-image: url('../../assets/images/Icons/search.svg');
-  background-size:contain;
-  background-repeat: no-repeat;
-  background-size: 5%;
-  background-position: 1% 50%;
-  text-indent: 20px;
-  padding: 5px 3px;
-  border-radius: .5rem;
+width: 90%;
+height: 2rem;
+background-image: url('../../assets/images/Icons/search.svg');
+background-size:contain;
+background-repeat: no-repeat;
+background-size: 5%;
+background-position: 1% 50%;
+text-indent: 20px;
+padding: 5px 3px;
+border-radius: .5rem;
 
-  @include tablet {
-    height: 2.5rem;
+@include tablet {
+height: 2.5rem;
 
-  }
-      @include desktop { 
-        text-indent: 40px;
-  }
+}
+  @include desktop { 
+    text-indent: 40px;
+}
 }
 
 
 .navbar__searchbar__container{
-  width: 60%;
-  padding-top: 1rem;
-  @include tablet {
-    width: 70%;
+width: 60%;
+padding-top: 1rem;
+@include tablet {
+width: 70%;
 
-  }
-      @include desktop { 
-      
-  }
+}
 }

@@ -1,7 +1,7 @@
 @use '../../styles/partials/mixins' as *;
 
 .comment-section{
-    padding-left: 1rem;
+padding-left: 1rem;
 
 &__header{
 padding-left: 4rem;
@@ -9,29 +9,29 @@ margin-bottom: 0px;
 color: #AFAFAF;
 font-size: 20px;
 @include tablet {
-  padding-left: 5rem;
+padding-left: 5rem;
 }
-    @include desktop { 
-        padding-left: 19rem;
-                
+@include desktop { 
+padding-left: 19rem;
+
 }
 }
 &__quantity{
-    @include tablet {
-        padding-left: 5rem;
-      }
-          @include desktop { 
-              padding-left: 19rem;
-                      
-      } 
-    
+@include tablet {
+padding-left: 5rem;
+}
+@include desktop { 
+padding-left: 19rem;
+
+} 
+
 }
 
 &__my-form{
-    @include tablet {
-        display: flex;
+@include tablet {
+display: flex;
 }
-    @include desktop {  
+@include desktop {  
 }
 
 }
@@ -41,40 +41,40 @@ left: 3%;
 width: 5vh;
 
 border-radius: 50%;
-    @include tablet {
-    left:0%;
-    width: 8vh;
-}
-    @include desktop { 
-        left:12%;
-        width: 6.5vh;
-                  
-}
-
-}
-
-&__user-comment{
-    padding-left: 4.2rem;
-    width: 60%;
-
 @include tablet {
-    padding-left: 5rem;
+left:0%;
+width: 8vh;
 }
-    @include desktop { 
-        padding-left: 19rem;
+@include desktop { 
+left:12%;
+width: 6.5vh;
                 
 }
 
 }
 
+&__user-comment{
+padding-left: 4.2rem;
+width: 60%;
+
+@include tablet {
+padding-left: 5rem;
+}
+@include desktop { 
+padding-left: 19rem;
+        
+}
+
+}
+
 &__your-comment{
- width: 131%;
- height: 6rem;
- @include tablet {
-    height: 3rem;
-    width: 100%;
- }
-    @include desktop { 
+width: 131%;
+height: 6rem;
+@include tablet {
+height: 3rem;
+width: 100%;
+}
+@include desktop { 
 
 }
 }
@@ -85,12 +85,12 @@ border-radius: 50%;
 padding-left: 4rem;
 padding-top: 1rem;
 @include tablet {
-    padding-left: 1rem;
-    padding-top: 0rem;
-    width: 28%;
+padding-left: 1rem;
+padding-top: 0rem;
+width: 28%;
 }
-    @include desktop { 
-                
+@include desktop { 
+        
 }
 }
 
@@ -102,58 +102,49 @@ width: 90%;
 height: 3.2rem;
 border-radius: .5rem;
 background-image: url('../../assets/images/Icons/add_comment.svg');
-  background-size:contain;
-  background-repeat: no-repeat;
-  background-size: 5%;
-  background-position: 1% 50%;
-  text-indent: 20px;
-  padding: 5px 3px;
-    @include tablet {
-     background-position: 10% 50%;
-    background-size: 12%;
-}
-    @include desktop { 
-                
+background-size:contain;
+background-repeat: no-repeat;
+background-size: 5%;
+background-position: 1% 50%;
+text-indent: 20px;
+padding: 5px 3px;
+@include tablet {
+background-position: 10% 50%;
+background-size: 12%;
 }
 }
-
-
-}
-
-
-.comments-container{
 
 }
 
 .comments__single-comment{
-    border-top: #AFAFAF 1px solid;
-    margin-top: 1rem;
-    padding-top: 1.3rem;
+border-top: #AFAFAF 1px solid;
+margin-top: 1rem;
+padding-top: 1.3rem;
 
-    @include tablet {
-    padding-left: 1rem;
+@include tablet {
+padding-left: 1rem;
 }
-    @include desktop { 
-        padding-left: 15rem;
-                    
+@include desktop { 
+padding-left: 15rem;
+    
 }
 
 
 &--img{
-    position: absolute;
-    
-    width: 5vh;
-    border-radius: 50%;
+position: absolute;
 
-    @include tablet {
-    left: 0%;
-    width: 8vh;
+width: 5vh;
+border-radius: 50%;
+
+@include tablet {
+left: 0%;
+width: 8vh;
 }
-    @include desktop { 
-        width: 6.5vh;
-        left:12%;
+@include desktop { 
+width: 6.5vh;
+left:12%;
 }
-    
+
 
 }
 &--name-date-container{
@@ -176,8 +167,8 @@ color: #AFAFAF;
 @include tablet {
 
 }
-    @include desktop { 
-        left: 50%;            
+@include desktop { 
+left: 50%;            
 }
 
 

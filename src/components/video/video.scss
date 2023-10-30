@@ -1,15 +1,9 @@
 @use '../../styles/partials/mixins' as *;
 
 .current-video{
-    width: 100%;
-    height: 29vh;
-
-
-    @include tablet {
-
-         
-    }
-    @include desktop { 
-        height: 66vh; 
-    }
+width: 100%;
+height: 29vh;
+@include desktop { 
+    height: 66vh; 
+}
 }
