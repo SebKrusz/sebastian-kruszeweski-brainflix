@@ -15,7 +15,7 @@ function Main() {
 
     const fetchData = async (videoID) => {
       try {
-        const response = await axios.get(`https://project-2-api.herokuapp.com/videos/${videoID}?api_key=dffeb61b-8257-4b5c-b16a-fb672e3a7258`);
+        const response = await axios.get(`http://localhost:8080/videos/${videoID}`);
         setSelectedVideo(response.data);
         setVideoComments(response.data.comments);
       } catch (error) {
@@ -28,7 +28,7 @@ function Main() {
 
   const handleVideoSelect = (video) => {
     setSelectedVideo(video);
-    axios.get(`https://project-2-api.herokuapp.com/videos/${video.id}?api_key=dffeb61b-8257-4b5c-b16a-fb672e3a7258`)
+    axios.get(`http://localhost:8080/videos/${video.id}`)
       .then(response => {
         setVideoComments(response.data.comments);
       })

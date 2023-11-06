@@ -1,22 +1,39 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+import { v4 as uuidv4 } from 'uuid';
 import './upload.scss';
 import thumbnail from '../../assets/images/images/upload.jpg';
 
 function Upload() {
-    const [isPublished, setIsPublished] = useState(false);
-    const [isCancel, setIsCancel] = useState(false);
+    const [title, setTitle] = useState('');
+    const [description, setDescription] = useState('');
 
     const handlePublish = () => {
-        window.alert('The video was uploaded.');
-        setIsPublished(true);
+        const newVideo = {
+            id: uuidv4(),
+            title: title,
+            description: description,
+        };
+
+        axios.post('http://localhost:8080/videos/', newVideo)
+            .then(response => {
+                console.log('Video uploaded:', response.data);
+                window.alert('Video published successfully!');
+            })
+            .catch(error => {
+                console.error('Error uploading video:', error);
+            });
     };
 
-    const handleCancel = () => {
-        window.alert('The video uploading was Cancelled.');
-        setIsCancel(true);
+    const handleTitleChange = (event) => {
+        setTitle(event.target.value);
     };
 
+    const handleDescriptionChange = (event) => {
+        setDescription(event.target.value);
+    };
+    
     return (
         <div className="upload__container">
             <h1 className='upload__header'> Upload Video</h1>
@@ -34,6 +51,8 @@ function Upload() {
                             id="title"
                             name="title"
                             placeholder="Add a title to your video"
+                            value={title}
+                            onChange={handleTitleChange}
                         ></textarea>
                     </form>
                     <form className='upload__description-form-container'>
@@ -44,13 +63,15 @@ function Upload() {
                             id="description"
                             name="description"
                             placeholder="Add a description to your video"
+                            value={description}
+                            onChange={handleDescriptionChange}
                         ></textarea>
                     </form>
                 </div>
             </div>
             <div className='upload__button-container'>
                 <Link to="/" className='upload__publish-button' onClick={handlePublish}>PUBLISH</Link>
-                <Link to="/" className='upload__cancel-button' onClick={handleCancel}>CANCEL</Link>
+                <Link to="/" className='upload__cancel-button'>CANCEL</Link>
             </div>
         </div>
     );

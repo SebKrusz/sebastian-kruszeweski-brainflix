@@ -7,11 +7,11 @@ function Aside({ handleVideoSelect, selectedVideo }) {
   const [nextVideos, setNextVideos] = useState([]);
 
   useEffect(() => {
-    const baseURL = 'https://project-2-api.herokuapp.com';
+    const baseURL = 'http://localhost:8080';
     const endURL = '/videos';
     const keyURL = '?api_key=dffeb61b-8257-4b5c-b16a-fb672e3a7258';
 
-    axios.get(baseURL + endURL + keyURL)
+    axios.get(baseURL + endURL)
       .then(response => {
         const selectedVideoId = selectedVideo ? selectedVideo.id : null;
         const filteredVideos = response.data.filter(video => video.id !== selectedVideoId);

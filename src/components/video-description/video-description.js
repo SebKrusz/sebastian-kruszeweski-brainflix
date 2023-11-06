@@ -18,12 +18,9 @@ function Videodescription() {
     const { id } = useParams();
 
     useEffect(() => {
-        const baseURL = 'https://project-2-api.herokuapp.com';
-        const keyURL = '?api_key=dffeb61b-8257-4b5c-b16a-fb672e3a7258';
-
         const fetchVideoData = async (videoID) => {
             try {
-                const response = await axios.get(`${baseURL}/videos/${videoID}${keyURL}`);
+                const response = await axios.get(`http://localhost:8080/videos/${videoID}`);
                 setVideoData(response.data);
             } catch (error) {
                 console.error('Error fetching video data: ', error);
