@@ -1,4 +1,4 @@
-# BrainFlix Sprint 1 - Front-End Showcase
+# BrainFlix Front-End Showcase
 
 ## Project Overview
 
