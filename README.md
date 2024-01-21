@@ -1,4 +1,6 @@
 # BrainFlix Front-End Showcase
+
+### IMAGES:
 https://imgur.com/a/sQ7iZ6e
 
 ## Project Overview
