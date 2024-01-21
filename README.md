@@ -20,13 +20,13 @@ Embark on a journey to showcase my prowess in front-end development through the 
 
 - Elevating user experience through clickable side videos. With a click, the magic the Main Video section gracefully updates to display the details and comments of the selected video.
 
-### React Wizardry
+### React
 
 - Leveraging React concepts to orchestrate a UI responding dynamically to user interactions.
 
 ### Visual Design Excellence
 
-- Achieving pixel-perfect responsiveness at and between breakpoints, a testament to my dedication to visual design precision.
+- Achieving pixel-perfect responsiveness at and between breakpoints, utilizing a mobile first layout, a testament to my dedication to visual design precision.
 
 ### State Management Mastery
 
